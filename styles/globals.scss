@@ -1,0 +1,1541 @@
+@import "variable";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font_inter;
+}
+
+a {
+  color: $color_black;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font_inter !important;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+.flex-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-csb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.pt-110 {
+  padding-top: 110px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-110 {
+  margin-top: 110px;
+}
+
+.mt-124 {
+  margin-top: 124px;
+}
+
+.mt-140 {
+  margin-top: 140px;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+.mt-160 {
+  margin-top: 160px;
+}
+ 
+
+.mb-140 {
+  margin-bottom: 140px;
+}
+
+.bgff5 {
+  background: $color_FFF5E;
+}
+
+.comon-container {
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+// Header
+.topbar-content {
+  padding-left: 33px;
+  padding-right: 129px;
+  height: 110px;
+}
+
+.toplogo-img-container {
+  width: 155px;
+  height: 49px;
+  cursor: pointer;
+}
+
+.customBtn01 {
+  background: $color_red_y;
+  width: 318px;
+  height: 60px;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  label {
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color_white;
+    cursor: pointer;
+  }  
+}
+
+.customBtn02 { 
+  border: solid 1px $color_yellow;
+  border-radius: 80px;
+  display: flex;
+  width: fit-content;
+  padding: 25px 36px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  label {
+    font-family: $font_noto; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    cursor: pointer;
+    color: $color_yellow;
+  }  
+}
+
+.topfirstbtn {
+  .customBtn02 {
+    width: 635px; 
+    @include media('tb') {
+      width: 400px;
+    }
+  }
+}
+
+.customBtn01.large {
+  width: 695px;
+  height: 76px;
+  cursor: pointer;
+  label { 
+    font-family: $font_noto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px; 
+    cursor: pointer;
+  }  
+}
+
+.brownSpace {
+  background: $color_yellow;
+  height: 58px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font_noto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: $color_fcf;
+}
+
+.page-topbar {
+  background: $color_white_opac;
+  padding: 45px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    font-family: $font_noto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: $color_black;
+  }
+  p{
+    font-family: $font_noto !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center; 
+    color: $color_gray_33;
+    margin-bottom: 0;
+    &:first-of-type {
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 95px;
+  background: $color_gray_67;
+  padding: 105px 15px 40px;
+  p {
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color_white;
+    margin-bottom: 0;
+    margin-top: 15px;
+    border: solid 3px yellow;
+    width: fit-content;
+    padding: 2px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .footer-logo-container {
+    width: 260px;
+    height: 82px;
+    cursor: pointer;
+  }
+} 
+
+#privacypage {
+  footer {
+    margin-bottom: 0;
+  }
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+ 
+.input-item {
+  margin-bottom: 40px;
+  .format {
+    font-family: $font_noto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color_gray_55;
+    margin-top: 2px;
+  }
+}
+
+.input-item-label-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+input {
+  height: 68px; 
+  outline: none !important;
+  &::placeholder {
+    font-family: $font_noto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color_gray_af;
+  }
+}
+
+.input-label {
+  font-family: $font_noto !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color_black;
+}
+
+.rmark {
+  font-family: $font_noto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color_white;
+  background: $color_gray_83;
+  width: 60px;
+  height: 22px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 17px;
+  &.required {
+    background: $color_red_y;
+  }
+}
+
+.badge-sm {
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color_white;
+  width: fit-content;
+  height: fit-content;
+  padding: 22px 147px;
+  background: $color_C4C;
+  border-radius: 40px;
+  position: relative;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    border: 16px solid transparent;
+    border-top: 29px solid $color_C4C;
+    content: "";
+    transform: translateX(-50%);
+  }
+}
+
+.mg-auto {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+ 
+.message-container {
+  padding: 24px 40px 20px 24px;
+  background: $color_white;
+  border-radius: 10px;
+  width: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  label {
+    padding-left: 20px;
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $color_black;
+  }
+}
+
+.cardTileImgText {
+  padding: 55px 45px 41px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  .title {
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $color_red_y;
+  }
+  .card-img {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div p{
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: $color_black;
+    margin-bottom: 0;
+  }
+}
+
+.shopIntroCard {
+  display: flex; 
+  background: $color_white;
+  .image_wrap {
+    max-width: 527px;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    img {
+      width: 100%;
+    }
+  }
+  .introducton_cont {
+    padding: 0 48px 20px 0; 
+    .mark_title {   
+      position: relative;
+      padding: 12px 16px 12px 36px;
+      background: transparent;
+      filter: drop-shadow(3px 3px 6px rgba($color: $color_black, $alpha: 0.5));
+      overflow: hidden;
+      margin-bottom: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        bottom: 12px;
+        width: 8px;
+        background: $color_yellow;
+        z-index: 1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $color_white;
+        z-index: 0;
+        transform: skew(30deg);
+        transform-origin: right bottom;
+      }
+      .title_text {
+        position: relative;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 50px;
+        color: $color_black;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+.card_top p{
+  margin-top: 45px;
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $color_black;
+  margin-left: 70px;
+  max-width: 510px;
+}
+
+.polygon_container {
+  margin-left: 70px;
+  margin-top: 23px;
+}
+
+.introducton_cont h3 {
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: $color_yellow;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.card_bottom {
+  margin-top: 23px;
+  padding: 20px;
+  padding-right: 8px;
+  background: $color_F4F;
+  margin-left: 52px;
+  p {
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color_black;
+    margin-bottom: 0;
+    span {
+      color: $color_red_y;
+    }
+  }
+}
+
+.bigcards .shopIntroCard:last-of-type{
+  margin-top: 78px;
+  .image_wrap {
+    order: 2;
+  }
+  .introducton_cont {
+    order: 1;
+  }
+} 
+
+.image_wrap {
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.sectionSpace {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90.8deg, #F69100 24.91%, #FFCE89 79.1%);
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  color: $color_white;
+}
+
+.exampleCard {
+  position: relative;
+  .excard_header {
+    background: linear-gradient(90.8deg, #F69100 24.91%, #FFCE89 79.1%);
+    height: 160px;
+    h3 {
+      font-family: $font_inter;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 78px;
+      line-height: 190px;
+      letter-spacing: 0.1em;
+      color: $color_white;
+      display: flex; 
+      justify-content: center;
+      background: linear-gradient(to right, #FFF 0%, #fff 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      span {
+        font-size: 150px;
+        line-height: 162px;
+      }
+    }
+  }
+
+  .excard_body {
+    background: $color_white_opac;
+    padding: 41px 71px 100px 80px;
+    .excard_body_checks {
+      padding: 24px 57px;
+      background: $color_white;
+      div {
+        display: flex;
+        align-items: flex-start;
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+        label {
+          margin-left: 48px;
+          font-family: $font_inter;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          color: $color_333;
+        }
+      }
+    }
+    .excard_body_text {
+      font-family: $font_inter;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color_black;
+      margin-top: 27px; 
+    }
+  }
+
+  .excard-badge {
+    position: absolute;
+    left: -25px;
+    top: -50px;
+  }
+}
+
+.benefitCard {
+  .benefitCard_header {
+    background: $color_white;
+    border: 6px solid $color_yellow;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: $color_yellow;
+    padding: 27px 0;
+    .benefitbadge {
+      position: absolute;
+      top: -45px;
+      left: -13px;
+    }
+  }
+
+  .benefitCard_body {
+    padding: 30px 60px 53px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #F69100;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+    border-top: none;
+  }
+
+  .benefit_textpart {
+    padding-top: 10px;
+    max-width: 754px;
+  }
+
+  .benefit_text_header *{
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 18px;
+  }
+
+  .col_red {
+    color: $color_red_y;
+  }
+
+  .benefit_text_body {
+    margin-top: 40px;
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color_black;  
+    max-width: 669px;
+    width: 100%;
+  }
+
+  .underline_yellow {
+    display: inline;
+    background: linear-gradient(transparent 60%,$color_EFE 0%);
+  }
+}
+
+.smallCard {
+  width: 33.3333333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .smallCard_title {
+    background: $color_yellow;
+    border: 6px solid $color_yellow;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    font-family: $font_inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: $color_white;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -2px;
+  }
+
+  .smallCard_body {
+    border: 5px solid $color_yellow;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+    padding:0 11px 5px;
+    flex: 1 auto;
+    width: 100%;
+    .smallCard_text p {
+      font-family: $font_inter;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      color: $color_black;
+    }
+    .smallCard_img {
+      display: flex; 
+      justify-content: center;
+      height: 185px; 
+      align-items: center;
+    }
+  }
+}
+
+.voice_card {
+  background: $color_white;
+  border: 5px solid $color_yellow;
+  box-sizing: border-box;
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .voice_card_badge {
+    position: absolute;
+    top: -82px;
+    left: -35px;
+  }
+
+  .voice_card_texts {
+    max-width: 465px;
+  }
+
+  .voice_card_img{
+    max-width: 395px; 
+    display: flex;
+    object-fit: cover;
+  } 
+}
+
+.badge_img img{
+  width: 100%;
+}
+
+.voice_card_title {
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 60px;
+  color: $color_black;
+  margin-bottom: 65px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 252px;
+    background: $color_yellow;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+.voice_card_sentence {
+  font-family: $font_inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+  color: $color_black;
+}
+
+.index_last_ {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  & > div  {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.max_1200 {
+  display: none;
+}
+
+.thankyou_content {
+  min-height: 1424px;
+  height: 100%;
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px; 
+    font-family:$font_noto !important;
+    color: #000000;
+    text-align: center;
+    margin-top: 221px;
+    @include media('sp') {
+      font-size: 16px;
+      margin-top: 100px;
+    }
+  }
+  @include media('sp') {
+    min-height: 290px;
+  }
+}
+
+@include media('max1265') {
+  .smallCard .smallCard_title { 
+    font-size: 20px;
+    line-height: 31px; 
+    height: 60px; 
+  }
+
+  .smallCard .smallCard_body .smallCard_text p { 
+    font-size: 15px;
+    line-height: 22px; 
+  }
+
+  .benefitCard .benefitCard_header .benefitbadge { 
+    width: 320px;
+  }
+}
+
+
+@include media('max1200') {
+  .max_1200 {
+    display: block;
+  }
+
+  .customBtn02 {
+    text-align: center;
+  }
+
+  .message-container label { 
+    font-size: 23px;
+    line-height: 32px; 
+  }
+
+  .cardTileImgText {
+    padding: 40px; 
+  }
+
+  .cardTileImgText .title { 
+    font-size: 26px;
+    line-height: 26px; 
+  }
+
+  .cardTileImgText div p {
+    font-size: 17px;
+  }
+
+  .cardTileImgText .card-img {
+    height: 210px; 
+    span {
+      width: 150px !important;
+    }
+  }
+
+  .shopIntroCard .image_wrap {
+    max-width: 450px;
+    width: 100%; 
+  }
+
+  .shopIntroCard .introducton_cont .mark_title .title_text { 
+    font-size: 35px; 
+    line-height: 40px; 
+  }
+
+  .shopIntroCard .introducton_cont .mark_title::after {
+    width: 450px;
+    right: auto;
+  }
+
+  .exampleCard .excard_header h3 { 
+    font-size: 60px;
+    line-height: 190px; 
+  }
+
+  .exampleCard .excard_header h3 span {
+    font-size: 123px; 
+  }
+
+  .exampleCard .excard_body .excard_body_text {
+    font-size: 20px;
+  }
+
+  .sectionSpace {
+    height: 123px; 
+    font-size: 50px;
+    line-height: 73px; 
+  } 
+
+  .benefitCard .benefitCard_header { 
+    font-size: 36px;
+    line-height: 30px; 
+    padding: 27px 0;
+  }
+
+  .benefitCard .benefit_text_body,
+  .benefitCard .benefit_text_header div {
+    padding-right: 40px;
+  }
+}
+
+@include media('max1124') {
+  .card_bottom p { 
+    font-size: 15px;
+    line-height: 24px; 
+  }
+
+  .card_top p {
+    margin-top: 23px; 
+    font-size: 16px; 
+  }
+
+  .introducton_cont h3 { 
+    font-size: 35px;
+    line-height: 40px;  
+  }
+
+  .shopIntroCard .introducton_cont .mark_title .title_text {
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  .shopIntroCard .introducton_cont .mark_title::after {
+    width: 405px; 
+  }
+
+  .exampleCard .excard-badge {
+    position: absolute;
+    left: -16px;
+    top: -43px;
+    width: 411px;
+  }
+
+  .exampleCard .excard_header h3 {
+    font-size: 53px;
+  }
+
+  .exampleCard .excard_header h3 span {
+    font-size: 100px;
+  }
+
+  .cardTileImgText {
+    padding: 40px;
+    width: 49%; 
+    margin-bottom: 20px;
+  }
+}
+ 
+ 
+
+@include media('tb') {
+  .topbar-content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .customBtn01 { 
+    width: 250px;
+    height: 50px;
+    border-radius: 60px;   
+    label { 
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px; 
+    }  
+  }
+  .toplogo-img-container {
+    width: 135px;
+    cursor: pointer;
+    height: auto;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .page-topbar { 
+    padding: 30px 16px;  
+    h1 {  
+      font-size: 26px;
+      line-height: 45px; 
+      margin-bottom: 0;
+    } 
+  }
+
+  .brownSpace { 
+    height: 35px; 
+  }
+
+  .brownSpace.homespace {
+    height: 58px;
+  }
+
+  footer { 
+    
+    padding: 100px 15px 40px;
+    p { 
+      font-size: 15px;
+      line-height: 18px; 
+    }
+  
+    .footer-logo-container {
+      width: 200px;
+      height: auto;
+    }
+  } 
+
+  .mb-140 {
+    margin-bottom: 99px;
+  }
+
+  .cardTileImgText .title {
+    font-size: 23px;
+    line-height: 26px;
+  }
+
+  .cardTileImgText div p {
+    font-size: 15px;
+  }
+
+  .cardTileImgText .card-img {
+    height: 200px;
+  }
+
+  .card_top p,
+  .polygon_container,
+  .introducton_cont h3 { 
+    margin-left: 23px; 
+  }
+
+  .card_bottom {
+    margin-top: 14px;
+    padding: 15px;
+    padding-right: 8px; 
+    margin-left: 24px;
+  }
+
+  .shopIntroCard .introducton_cont {
+    padding: 0 17px 15px 0;
+  }
+
+  .shopIntroCard .image_wrap {
+    max-width: 330px;
+    width: 100%;
+  }
+
+  .benefitCard .benefit_text_header * {  
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+
+  .benefitCard .benefit_textpart {
+    padding-top: 10px;
+    max-width: 410px;
+  }
+
+  .benefitCard .benefit_text_body {
+    max-width: 410px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .smallCard .smallCard_title {
+    font-size: 17px;
+    line-height: 27px;
+    height: 60px;
+  }
+
+  .voice_card_sentence { 
+    font-size: 16px;
+    line-height: 31px; 
+  }
+
+  .voice_card_title { 
+    font-size: 30px;
+    line-height: 47px; 
+    margin-bottom: 35px; 
+  }
+
+  .voice_card_title::after {  
+    width: 201px; 
+    bottom: -13px; 
+  }
+
+  .voice_card .voice_card_texts {
+    max-width: 380px;
+    padding-left: 20px;
+  }
+
+  .shopIntroCard .introducton_cont .mark_title .title_text {
+    font-size: 21px;
+    line-height: 36px;
+  }
+
+  .shopIntroCard .introducton_cont .mark_title::after {
+    width: 278px;
+  }
+  
+}
+
+@include media('sp') {
+  .topbar-content { 
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 56px;
+  }
+  .customBtn01 { 
+    width: 148px;
+    height: 35px;
+    border-radius: 40px;   
+    label {
+      font-size: 14px;
+      line-height: 20px; 
+    }  
+  }
+  .toplogo-img-container {
+    width: 111px;
+    height: auto;
+    margin-top: 9px;
+  }
+
+  .page-topbar { 
+    padding: 45px 20px;  
+    h1 {  
+      font-size: 20px;
+      line-height: 36px;  
+    }
+  }
+
+  .brownSpace { 
+    height: 23px; 
+  }
+
+  footer { 
+    padding: 120px 15px 74px;
+    p { 
+      font-size: 15px;
+      line-height: 21px; 
+    }
+  
+    .footer-logo-container {
+      width: 235px;
+      height: auto;
+    }
+  } 
+
+  .page-topbar{
+    p { 
+      font-size: 14px;
+      line-height: 20px; 
+    } 
+  }
+
+  .pc {
+    display: none !important;
+  }
+  
+  .sp {
+    display: block !important;
+  }
+
+  .input-label { 
+    font-size: 16px; 
+  }
+
+  .rmark {
+    font-size: 13px;
+  }
+
+  input {
+    height: 50px; 
+    &::placeholder { 
+      font-size: 13px; 
+    }
+  } 
+
+  .customBtn02 label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%; 
+  }
+
+  .badge-sm {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .sp_w_100 {
+    width: 100%;
+  }
+
+  .badge-sm::after { 
+    bottom: -24px; 
+    border: 10px solid transparent;
+    border-top: 16px solid #C4C4C4;  
+  }
+
+  .sec02 h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .pt-110 {
+    padding-top: 75px;
+  }
+
+  .message-container label {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .mt-60 {
+    margin-top: 28px;
+  }
+
+  .cardTileImgText {
+    padding: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cardTileImgText .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .cardTileImgText div p {
+    font-size: 21px;
+    line-height: 31px;
+  }
+
+  .shopIntroCard {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .shopIntroCard .image_wrap ,
+  .shopIntroCard .image_wrap > span{
+    max-width: unset;
+    width: 100% !important;
+  }
+
+  .shopIntroCard .introducton_cont .mark_title::after {
+    width: auto;
+    right: 0;
+  }
+
+  .card_top p {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+ .polygon_container, .introducton_cont h3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introducton_cont h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .card_bottom {
+    margin-top: 20px;
+    padding: 30px 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .shopIntroCard .introducton_cont .mark_title {
+    margin-top: -30px;
+  }
+  .bigcards .shopIntroCard:last-of-type {
+    margin-top: 30px;
+  }
+
+  .bigcards .shopIntroCard:last-of-type .image_wrap {
+    order: 1;
+  }
+
+  .bigcards .shopIntroCard:last-of-type .introducton_cont {
+    order: 2;
+  }
+
+  .sectionSpace {
+    height: 80px;
+    font-size: 30px;
+    line-height: 73px;
+  }
+
+  .mt-80 {
+    margin-top: 45px;
+  }
+
+  .mt-140 {
+    margin-top: 58px;
+  }
+
+  .exampleCard .excard-badge {
+    position: absolute;
+    left: -13px;
+    top: -21px;
+    width: auto;
+  }
+
+  .exampleCard .excard_header h3 {
+    font-size: 40px;
+    line-height: 50px;
+    line-height: 0;
+    display: block;
+    text-align: center; 
+    background: unset;
+    -webkit-text-fill-color: unset;
+    padding: 20px 0;  
+    margin-bottom: -35px;
+  }
+
+  .exampleCard .excard_header{
+    padding-top: 52px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+
+  .exampleCard .excard_header h3 span {
+    font-size: 90px;
+  }
+  
+  .exampleCard .excard_body { 
+    padding: 40px 24px 65px 24px;
+  }
+
+  .exampleCard .excard_body .excard_body_checks div label {
+    margin-left: 19px;  
+    font-size: 18px;
+    line-height: 25px; 
+  }
+
+  .exampleCard .excard_body .excard_body_checks div > span {
+    width: 27px !important;
+  }
+
+  .exampleCard .excard_body .excard_body_checks {
+    padding: 24px 15px; 
+  }
+
+  .exampleCard .excard_body .excard_body_text {
+    font-size: 16px;
+  }
+
+  .mt-124 {
+    margin-top: 70px;
+  }
+
+  .cardTileImgText {
+    background: $color_white;
+  }
+
+  .benefitCard .benefitCard_header .benefitbadge {
+    width: 200px;
+    top: -28px;
+  }
+  .benefitCard .benefitCard_header {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 37px 0;
+  }
+
+  .benefitCard .benefitCard_body,
+  .benefitCard .benefitCard_header {
+    border-width: 3px;
+  }
+
+  .benefitCard .benefitCard_body {
+    flex-direction: column;
+  }
+
+  .benefit_text_header div,
+  .benefitCard .benefit_text_body,
+  .benefitCard .benefit_textpart {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .benefit_detail_image {
+    margin-top: 30px;
+  }
+
+  .benefitCard .benefit_text_body, .benefitCard .benefit_text_header div {
+    padding-right: 0;
+  }
+
+  .benefitCard .benefitCard_body {
+    padding: 30px 24px;
+  }
+
+  .sec09Container {
+    padding: 145px 0 163px;
+  }
+
+  .smallCard {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; 
+    margin-top: 40px;
+  }
+
+  .sec10 .bottomcont .mark { 
+    margin-bottom: 10px;
+  }
+
+  .voice_card {
+    flex-direction: column;
+  }
+
+  .voice_card_title {
+    font-size: 20px;
+    line-height: 37px; 
+  }
+
+  .voice_card .voice_card_texts {
+    margin-top: 10px;
+  }
+  .voice_card {
+    padding: 25px;
+  }
+
+  .voice_card .voice_card_badge { 
+    top: -35px;
+    left: -19px;
+    width: 350px;
+    max-width: 350px;
+    right: 30px;
+  }
+
+  .message-container {
+    width: 100%;
+  }
+
+  .index_last_ {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+  .customBtn01.large {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .brownSpace.homespace { 
+    font-size: 20px;
+  }
+
+  .cardTileImgText .title {
+    font-size: 26px;
+    line-height: 12px;
+  }
+}
+
+
+@include media('sp360') {
+  .voice_card .voice_card_badge {
+    top: -35px;
+    left: -19px;
+    width: 258px;
+    max-width: 350px;
+    right: 30px;
+  }
+
+  .sec10 .sec10_mark{
+    margin-top: -10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 90%;
+  }
+
+  .message-container label {
+    font-size: 15px;
+    line-height: 28px;
+  }
+ 
+  .cardTileImgText div p {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .card_top p {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+}
+ 
